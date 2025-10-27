@@ -1,16 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bhavesh Portfolio (Test)</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavesh Bhat — Portfolio</title>
   <style>
-    html,body{height:100%}
-    body{margin:0;display:grid;place-items:center;background:#111;color:#0ff;
-         font:700 28px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu}
+    :root {
+      --bg: #0a0a0a;
+      --text: #e6f1ff;
+      --muted: #9fb0c3;
+      --accent: #00e0a8;
+      --card: #111418;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #1a1f25;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      color: var(--muted);
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    section { margin-bottom: 60px; }
+    h2 {
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 15px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: var(--card);
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #1f2833;
+      font-weight: 500;
+    }
+    .projects {
+      display: grid;
+      gap: 20px;
+    }
+    .project {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #1f2833;
+    }
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 30px;
+      border-top: 1px solid #1a1f25;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      main { padding: 30px 15px; }
+    }
   </style>
 </head>
 <body>
-  ✅ It works! — Bhavesh Portfolio
+  <header>
+    <h1>Bhavesh Bhat</h1>
+    <p>Full-Stack Web Developer | React • Next.js • Node.js • MongoDB</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m Bhavesh — a passionate developer focused on building functional and beautiful web experiences. 
+        I love turning ideas into scalable products using modern technologies like React, Next.js, and TailwindCSS.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Next.js</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">Tailwind CSS</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>🌦 Weather App</h3>
+          <p>A responsive weather forecasting app that detects user location and shows a 5-day forecast using OpenWeather API.</p>
+          <a href="https://github.com/bhavesh0001/Weather.app" target="_blank">View on GitHub →</a>
+        </div>
+        <div class="project">
+          <h3>🛍 E-commerce Website</h3>
+          <p>Fully functional front-end e-commerce UI with product pages, cart system, and search functionality.</p>
+          <a href="https://github.com/bhavesh0001/E-comm-Website" target="_blank">View on GitHub →</a>
+        </div>
+        <div class="project">
+          <h3>💼 Portfolio Generator</h3>
+          <p>Web app that creates a professional portfolio from user input with TailwindCSS styling and downloadable resume feature.</p>
+          <a href="https://github.com/bhavesh0001/Portfoliogernatorbhavesh" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Connect</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/bhaveshh-bhat-642932228/" target="_blank">LinkedIn</a> ·
+        <a href="https://github.com/bhavesh0001" target="_blank">GitHub</a> ·
+        <a href="mailto:youremail@gmail.com">Email</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2025 Bhavesh Bhat. Built with ❤️ and focus.</footer>
 </body>
 </html>
